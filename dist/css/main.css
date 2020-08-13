@@ -1,0 +1,235 @@
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  #home .container h1 {
+    font-size: 40px;
+  }
+  #home .container h2 {
+    font-size: 20px;
+  }
+  .slider-wrapper {
+    letter-spacing: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider {
+    padding-left: 0px;
+  }
+  .slider .slider-text1 {
+    font-size: 20px;
+  }
+  .main-button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#home .container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  /* ,url("/images/laptop.jpg")*/
+  background-size: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home .container h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+#home .container h1 span {
+  color: #14a76c;
+}
+
+#home .container h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.slider-wrapper {
+  letter-spacing: 1px;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 30px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.slider div {
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.slider-text1 {
+  background: #14a76c;
+  -webkit-animation: slide 6s linear infinite;
+          animation: slide 6s linear infinite;
+}
+
+.slider-text2 {
+  background: coral;
+}
+
+.slider-text3 {
+  background: cornflowerblue;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  33% {
+    margin-top: -200px;
+  }
+  38% {
+    margin-top: -100px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  33% {
+    margin-top: -200px;
+  }
+  38% {
+    margin-top: -100px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.main-button {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.main-button .btn {
+  padding: 10px;
+  color: white;
+  width: 180px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main-button .btn1 {
+  background: #14a76c;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.main-button .btn1:hover {
+  background: #149da7;
+}
+
+.main-button .btn2 {
+  letter-spacing: 1px;
+  background: transparent;
+  border: 2px solid #fff;
+  margin-left: 0px;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.main-button .btn2:hover {
+  background: #14a76c;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,134 @@
+@import "config";
+@import "queries";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+#home .container {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+  /* ,url("/images/laptop.jpg")*/
+  background-size: cover;
+  overflow: hidden;
+  @include flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+.slider-wrapper {
+  letter-spacing: 1px;
+  font-size: 25px;
+  @include flex;
+}
+
+.slider {
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 30px;
+  padding-left: 10px;
+  overflow: hidden;
+
+  div {
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+}
+.slider-text1 {
+  background: $secondary-color;
+  animation: slide 6s linear infinite;
+}
+.slider-text2 {
+  background: coral;
+}
+.slider-text3 {
+  background: cornflowerblue;
+}
+
+@keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  33% {
+    margin-top: -200px;
+  }
+  38% {
+    margin-top: -100px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.main-button {
+  margin-top: 20px;
+  @include flex;
+  gap: 20px;
+
+  .btn {
+    padding: 10px;
+    color: white;
+    width: 180px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn1 {
+    background: $secondary-color;
+    @include easeOut;
+    &:hover {
+      background: #149da7;
+    }
+  }
+  .btn2 {
+    letter-spacing: 1px;
+    background: transparent;
+    border: 2px solid #fff;
+    margin-left: 0px;
+    @include easeOut;
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+}

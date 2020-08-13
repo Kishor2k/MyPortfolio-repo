@@ -1,0 +1,40 @@
+@include mediaXl {
+}
+
+//Desktop and Laptops
+@include mediaLg {
+}
+
+//Tablets and Small laptops
+@include mediaMd {
+}
+
+//Smartphones
+@include mediaSm {
+  .container {
+    padding: 20px;
+  }
+  #home .container {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .slider-wrapper {
+    letter-spacing: 0px;
+    @include flex;
+    flex-direction: column;
+  }
+
+  .slider {
+    padding-left: 0px;
+    .slider-text1 {
+      font-size: 20px;
+    }
+  }
+  .main-button {
+    flex-direction: column;
+  }
+}
