@@ -7,6 +7,26 @@
 
 //Tablets and Small laptops
 @include mediaMd {
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2";
+    grid-template-columns: 1fr;
+    width: 100vw;
+    padding: 20px;
+  }
+  .main-contact {
+    flex-direction: column;
+  }
+  .contact-info {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
 }
 
 //Smartphones
