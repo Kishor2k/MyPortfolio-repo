@@ -27,6 +27,22 @@
   .contact-form {
     width: 100%;
   }
+  .social-media {
+    ul {
+      li {
+        margin: 0 10px;
+
+        a {
+          height: 30px;
+          width: 30px;
+
+          .fa {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //Smartphones
@@ -56,5 +72,36 @@
   }
   .main-button {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #header .header {
+    min-height: 5vh;
+  }
+
+  #header .hamburger {
+    display: none;
+  }
+  .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background: transparent;
+    padding-right: 20px;
+
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      opacity: 1;
+    }
+  }
+  #header .header .nav-bar .nav-list ul a {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    padding: 20px;
   }
 }
