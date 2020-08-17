@@ -1,0 +1,113 @@
+#portfolio .container {
+  background: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  overflow: hidden;
+  @include flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.top-img {
+  position: relative;
+  background: green;
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/kishor_rgb2.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.navigation {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: transparent;
+  border: 2px solid $secondary-color;
+  border-radius: 30px;
+  box-shadow: 2px 4px 8px black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+.gallery {
+  width: 90%;
+  padding: 40px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px black;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.hidden {
+  display: none;
+  opacity: 0;
+  @include easeOut;
+}
+.show {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  opacity: 1;
+}
+.navigation .current {
+  background: $secondary-color;
+}
+
+.projects {
+  @include flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn-top {
+  background: #999;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:hover {
+    background-color: $secondary-color;
+    @include easeOut;
+  }
+}
+
+.btn-bottom {
+  @extend .btn-top;
+
+  i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}

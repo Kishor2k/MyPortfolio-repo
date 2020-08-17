@@ -1,3 +1,154 @@
+#portfolio .container {
+  background: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.top-img {
+  position: relative;
+  background: green;
+  width: 100%;
+  height: 60vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/images/kishor_rgb2.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/kishor_rgb2.jpg") center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-img h1 {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navigation {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: transparent;
+  border: 2px solid #14a76c;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 4px 8px black;
+          box-shadow: 2px 4px 8px black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.gallery {
+  width: 90%;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 8px black;
+          box-shadow: 2px 4px 8px black;
+}
+
+.gallery img:hover {
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.show {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  opacity: 1;
+}
+
+.navigation .current {
+  background: #14a76c;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.btn-top, .btn-bottom {
+  background: #999;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn-top a, .btn-bottom a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-top:hover, .btn-bottom:hover {
+  background-color: #14a76c;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.btn-bottom i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +190,128 @@ body {
 
 #logo {
   margin-left: 50px;
+  -webkit-animation: logozoom 1.3s ease 1.7s;
+          animation: logozoom 1.3s ease 1.7s;
+}
+
+#logo #path-1 {
+  -webkit-animation: anim1 1.5s ease;
+          animation: anim1 1.5s ease;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes anim1 {
+  from {
+    -webkit-transform: translate(200px);
+            transform: translate(200px);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes anim1 {
+  from {
+    -webkit-transform: translate(200px);
+            transform: translate(200px);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+#logo #path-2 {
+  -webkit-animation: anim2 1.5s ease;
+          animation: anim2 1.5s ease;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes anim2 {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes anim2 {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+#logo #path-3 {
+  -webkit-animation: anim3 1.5s ease;
+          animation: anim3 1.5s ease;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes anim3 {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes anim3 {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes logozoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes logozoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 #header .header {
@@ -436,7 +709,7 @@ body {
 }
 
 #about {
-  background: #212121;
+  background: #141414;
 }
 
 .text-secondary {
@@ -483,7 +756,7 @@ body {
   height: 220px;
   margin: auto;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 4px solid #14a76c;
   -webkit-box-shadow: 2px 5px 10px #000;
           box-shadow: 2px 5px 10px #000;
 }
@@ -536,8 +809,8 @@ i {
 }
 
 .contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("/images/himalaya.jpg") center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/himalaya.jpg") center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("/images/himalayabnw.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/himalayabnw.jpg") center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -706,6 +979,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  #logo {
+    margin-left: 10px;
+  }
   .about-info {
         grid-template-areas: "bioimage" "bio" "job1" "job2";
     -ms-grid-columns: 1fr;
@@ -735,6 +1011,9 @@ i {
   }
   .social-media ul li a .fa {
     font-size: 25px;
+  }
+  .social-media .gallery {
+    padding: 20px;
   }
 }
 
@@ -775,6 +1054,15 @@ i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .navigation button {
+    font-size: 14px;
+  }
+  .gallery {
+    padding: 10px;
+  }
+  .top-img h1 {
+    font-size: 50px;
   }
 }
 

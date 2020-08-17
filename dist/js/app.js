@@ -25,3 +25,25 @@ document.addEventListener("scroll", () => {
     header.style.backgroundColor = "transparent";
   }
 });
+
+const btnfront = document.querySelector(".front");
+const btngraph = document.querySelector(".graph");
+const frontEnd = document.querySelector(".front-end");
+const graphics = document.querySelector(".graphics");
+
+btngraph.addEventListener("click", () => {
+  graphics.classList.remove("hidden");
+  graphics.classList.add("show");
+  frontEnd.classList.remove("show");
+  frontEnd.classList.add("hidden");
+  btngraph.classList.add("current");
+  btnfront.classList.remove("current");
+});
+btnfront.addEventListener("click", () => {
+  graphics.classList.remove("show");
+  graphics.classList.add("hidden");
+  frontEnd.classList.remove("hidden");
+  frontEnd.classList.add("show");
+  btngraph.classList.remove("current");
+  btnfront.classList.add("current");
+});

@@ -7,6 +7,9 @@
 
 //Tablets and Small laptops
 @include mediaMd {
+  #logo {
+    margin-left: 10px;
+  }
   .about-info {
     grid-template-areas:
       "bioimage"
@@ -42,9 +45,11 @@
         }
       }
     }
+    .gallery {
+      padding: 20px;
+    }
   }
 }
-
 //Smartphones
 @include mediaSm {
   .container {
@@ -72,6 +77,15 @@
   }
   .main-button {
     flex-direction: column;
+  }
+  .navigation button {
+    font-size: 14px;
+  }
+  .gallery {
+    padding: 10px;
+  }
+  .top-img h1 {
+    font-size: 50px;
   }
 }
 
