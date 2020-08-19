@@ -188,23 +188,23 @@
                 </div>
             </div>
             <div data-aos = "fade-left" class="contact-form">
-                <form action="">
+                <form name = "contact" method= "POST" netlify>
                     <h2>Send Message</h2>
                     <div class="input-box">
-                        <input type="text"  required>
+                        <input type="text" name = "name" required>
                         <span>Full Name</span>
                     </div>
 
                     <div class="input-box">
-                        <input type="text" required>
+                        <input type="text" name = "email" required>
                         <span>Email</span>
                     </div>
                     <div class="input-box">
-                        <textarea required></textarea>
+                        <textarea name = "message" required></textarea>
                         <span>Type your message...</span>
                     </div>
                     <div class="input-box">
-                        <input type="submit" value ="Send">
+                        <input type="submit" name = "submit" value ="Send">
                     </div>
                 </form>
             </div>
