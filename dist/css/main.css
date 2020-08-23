@@ -1064,6 +1064,15 @@ i {
   .top-img h1 {
     font-size: 50px;
   }
+  .main-button .btn .btn2 {
+    margin-top: 20px;
+  }
+  .btn-top, .btn-bottom {
+    margin-top: 10px;
+  }
+  .btn-bottom {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
