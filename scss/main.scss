@@ -612,13 +612,13 @@ main {
   grid-area: job1;
 }
 .job-1[data-scroll="out"] {
-  transform: translateY(200px);
+  transform: translateX(-200px);
 }
 .job-2 {
   grid-area: job2;
 }
 .job-2[data-scroll="out"] {
-  transform: translateY(200px);
+  transform: translateX(200px);
 }
 .job {
   background: darken($primary-color, 1);
