@@ -85,6 +85,7 @@
   flex-direction: column;
   gap: 10px;
 }
+
 .btn-top {
   background: #999;
   width: 100%;
@@ -93,6 +94,7 @@
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
+  cursor: pointer;
   a {
     text-decoration: none;
     color: #fff;

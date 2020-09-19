@@ -1,3 +1,17 @@
+const loader = document.querySelector(".loader");
+const main = document.querySelector("main");
+const loaderBody = document.querySelector(".loader-body");
+
+function init() {
+  setTimeout(() => {
+    loaderBody.style.opacity = 0;
+    loaderBody.style.display = "none";
+    main.style.display = "block";
+    setTimeout(() => (main.style.opacity = 1), 50);
+  }, 4000);
+}
+init();
+
 const hamburger = document.querySelector(
   ".header .nav-bar .nav-list .hamburger"
 );

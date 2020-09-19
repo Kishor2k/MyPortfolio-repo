@@ -14,18 +14,30 @@
     />
     <link rel="stylesheet" href="/dist/css/lightbox.min.css" />
     <script src="/dist/js/lightbox-plus-jquery.min.js"></script>
-    <link
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
     <title>Kishor Karki</title>
     <link rel = "shortcut icon" type= "image/png" href="/images/favicon.png">
   </head>
   <body>
+    <div class="loader-body">
+      <div class="loader">
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__ball"></div>
+      </div>
+      <h4>Kishor karki</h4>
+      </div>
+      <main>
     <section id="header">
      <div class="header container">
        <div class="nav-bar">
@@ -89,7 +101,7 @@
             </div>
         </div>
           <div class="main-button">
-            <a href="coming soon.jpg" download><button class="btn btn1">Download CV</button></a>
+            <a href="./images/kishor_CV.pdf" download><button class="btn btn1">Download CV</button></a>
             <a href="/dist/portfolio.html"><button class="btn btn2">Portfolio</button></a>
       </div>
       <div class="social-media">
@@ -122,10 +134,10 @@
             <h1 class="text-primary">About <span class="text-secondary">Me</span></h1>
             <p>Let me tell you a few things about me...</p>
             <div class="about-info">
-            <img data-aos = "fade-right" src="/images/kishor_rgb.jpg" alt="Kishor karki" class= "bio-image" >
-        <div data-aos = "fade-left" class="bio">
+            <img  data-scroll src="/images/kishor_rgb.jpg" alt="Kishor karki" class= "bio-image" >
+        <div  data-scroll class="bio">
             <div ><h3 class="text-secondary">BIO</h3>
-            <p>By day, I am a UI/UX Designer at Makarios Pvt. Ltd. 
+            <p>By day, I am an Indesign Artist at Makarios Pvt. Ltd. 
                 By night/weekend I am a freelance Front End Developer 
                 and Graphics Designer who loves helping companies create
                 great website. With 2+ years of developing and  designing experience,
@@ -133,7 +145,7 @@
                 Javascript, React. My projects are clean, concise and always on time.
             </p></div>
         </div>           
-        <div data-aos = "fade-right" class="job job-1">
+        <div data-scroll class="job job-1">
             <div class="job-heading">
             <i class="fa fa-cogs"></i>
             <h3>Front End Developer</h3>
@@ -144,7 +156,7 @@
             </p>
         </div>
 
-        <div data-aos = "fade-left" data-aos-offset="100" class="job job-2">
+        <div data-scroll  class="job job-2">
             <div class="job-heading">
             <i class="fa fa-cogs"></i>
             <h3>Graphics Designer</h3>
@@ -165,7 +177,7 @@
         <div class="contact container">
             <div class="contact-intro"><h1 class="text-primary">Contact <span class="text-secondary">Me</span></h1></div>
             <div class="main-contact">
-            <div data-aos = "fade-right" class="contact-info">
+            <div data-scroll class="contact-info">
                 <div class="box">
                     <div class="icon"><i class="fa fa-map-marker" aria-hidden = "true"></i></div>
                     <div class="text">
@@ -188,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <div data-aos = "fade-left" class="contact-form">
+            <div data-scroll class="contact-form">
                 <form method="post" name="Contact" data-netlify="true">
                     <h2>Send Message</h2>
                     <div class="input-box">
@@ -212,14 +224,15 @@
              </div>
         </div>
     </section>
-
+  </main>
     <script src="/dist/js/app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 200,
-      duration: 1000
-    });
-  </script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+ 
+   <script>
+     ScrollOut({
+       threshold: .3
+     });
+   </script>
+  
   </body>
 </html>
